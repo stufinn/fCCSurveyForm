@@ -1,11 +1,77 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Page Title</title>
+    <title>fCC Survey Form</title>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
+
+    <div id="title"><h1>fCC Survey Form</h1></div>
+
+    <div id="description"><p>Add description text here</p></div>
+
+    <form id="survey-form">
+        
+        <div>
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Boaty McBoatface">
+        </div>
+
+        <div>
+            <label for="email" id="email-label">E-mail address:</label>
+            <input type="email" id="email" name="email"  placeholder="boaty@mcboatface.com">
+        </div>
+
+        <div>
+            <label for="age" id="number-label">Age:</label>
+            <input type="number" min="14" max="99" id="age" name="age" placeholder="how old are you?">
+        </div>
+        
+        <div>
+            <label for="dropdownList">Select an option:</label>
+            <select name="dropdownList" id="dropdown">
+                <option value="optionA">Option A</option>
+                <option value="optionB">Option B</option>
+                <option value="optionC">Option C</option>
+            </select>
+        </div>
+
+        <p>Please select from the following:</p>
+        <div>
+            <input type="radio" name="radio" id="radioButton1" value="radio1">
+            <label for="radioButton1">Option 1</label>
+            <input type="radio" name="radio" id="radioButton2" value="radio2">
+            <label for="radioButton2">Option 2</label>
+            <input type="radio" name="radio" id="radioButton3" value="radio3">
+            <label for="radioButton3">Option 3</label>
+                
+        </div>
+
+        <p>Select options from the checkboxes below:</p>
+        <div>
+            <label for="checkbox1">Checkbox 1</label>
+            <input type="checkbox" name="checkbox" id="checkbox1" value="checkbox1">
+            <label for="checkbox2">Checkbox 2</label>
+            <input type="checkbox" name="checkbox" id="checkbox2" value="checkbox2">
+            <label for="checkbox3">Checkbox 3</label>
+            <input type="checkbox" name="checkbox" id="checkbox3" value="checkbox3">
+            <label for="checkbox4">Checkbox 4</label>
+            <input type="checkbox" name="checkbox" id="checkbox4" value="checkbox4">
+            <label for="checkbox5">Checkbox 5</label>
+            <input type="checkbox" name="checkbox" id="checkbox5" value="checkbox5">
+                    
+        </div>
+
+        <div>
+            <label for="textarea">Additional notes?</label>
+            <textarea name="textarea" id="textareabox" rows="10" cols="50">Enter your comments here</textarea>
+                    
+        </div>
+
+        <input type="submit" id="submit" value="Submit">
+
+    </form>
     
 </body>
 </html>
