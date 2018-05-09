@@ -59,7 +59,7 @@ body {
     font-size: 1.25vmax;
     color: white;
     background: linear-gradient(rgba(0, 0, 255, 0.3),rgba(0, 0, 255, 0.3)), 
-    url('../images/adrian-korte-76051-unsplash-small.jpg');
+    url('https://raw.githubusercontent.com/stufinn/fCCSurveyForm/master/assets/images/adrian-korte-76051-unsplash-small.jpg');
     background-size: cover; 
     height: 100vh;
 }
@@ -110,6 +110,10 @@ h1 {
     padding-bottom: 20px;
 }
 
+.survey-question p {
+    line-height: 20px;
+}
+
 #textareabox {
     margin-top: 10px;
     width: 85%;
@@ -124,5 +128,10 @@ h1 {
 .checkboxes,
 .radio-buttons {
     display: block;
-    padding: 10px 0 0 35%;
+    padding: 10px 0 0 50%;
+}
+
+#photo-badge {
+    margin: 0 10px 10px 0;
+    align-self: end;
 }
