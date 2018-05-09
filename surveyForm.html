@@ -2,76 +2,138 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>fCC Survey Form</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <title>Coding Music Survey</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Raleway" rel="stylesheet"> 
 </head>
 <body>
 
-    <div id="title"><h1>fCC Survey Form</h1></div>
+    <div id="top-bar">
 
-    <div id="description"><p>Add description text here</p></div>
+        <h1 id="title">Coding With Music - A Survey</h1>
 
-    <form id="survey-form">
-        
-        <div>
-            <label for="name" id="name-label">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Boaty McBoatface">
-        </div>
+        <p id="description">What kind of music helps you to code?</p>
 
-        <div>
-            <label for="email" id="email-label">E-mail address:</label>
-            <input type="email" id="email" name="email"  placeholder="boaty@mcboatface.com">
-        </div>
+    </div>
 
-        <div>
-            <label for="age" id="number-label">Age:</label>
-            <input type="number" min="14" max="99" id="age" name="age" placeholder="how old are you?">
-        </div>
-        
-        <div>
-            <label for="dropdownList">Select an option:</label>
-            <select name="dropdownList" id="dropdown">
-                <option value="optionA">Option A</option>
-                <option value="optionB">Option B</option>
-                <option value="optionC">Option C</option>
-            </select>
-        </div>
 
-        <p>Please select from the following:</p>
-        <div>
-            <input type="radio" name="radio" id="radioButton1" value="radio1">
-            <label for="radioButton1">Option 1</label>
-            <input type="radio" name="radio" id="radioButton2" value="radio2">
-            <label for="radioButton2">Option 2</label>
-            <input type="radio" name="radio" id="radioButton3" value="radio3">
-            <label for="radioButton3">Option 3</label>
-                
-        </div>
+    <div id="flex-container">
 
-        <p>Select options from the checkboxes below:</p>
-        <div>
-            <label for="checkbox1">Checkbox 1</label>
-            <input type="checkbox" name="checkbox" id="checkbox1" value="checkbox1">
-            <label for="checkbox2">Checkbox 2</label>
-            <input type="checkbox" name="checkbox" id="checkbox2" value="checkbox2">
-            <label for="checkbox3">Checkbox 3</label>
-            <input type="checkbox" name="checkbox" id="checkbox3" value="checkbox3">
-            <label for="checkbox4">Checkbox 4</label>
-            <input type="checkbox" name="checkbox" id="checkbox4" value="checkbox4">
-            <label for="checkbox5">Checkbox 5</label>
-            <input type="checkbox" name="checkbox" id="checkbox5" value="checkbox5">
+
+
+        <form id="survey-form">
+            
+            <div class="survey-question">
+                <label for="name" id="name-label" class="small-label">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Boaty McBoatface" required>
+            </div>
+
+            <div class="survey-question">
+                <label for="twitter" id="twitter-label" class="small-label">Twitter Handle:</label>
+                <input type="text" id="twitter" name="twitter" placeholder="@boatymcboatface" optional>
+            </div>
+
+            <div class="survey-question">
+                <label for="email" id="email-label" class="small-label">E-mail address:</label>
+                <input type="email" id="email" name="email"  placeholder="boaty@mcboatface.com" required>
+            </div>
+
+            <div class="survey-question">
+                <label for="age" id="number-label" class="small-label">Age: </label>
+                <input type="number" min="14" max="99" id="number" name="age" placeholder="how old are you?">
+            </div>
+            
+            <div class="survey-question">
+                <label for="dropdownList" class="small-label">Do you listen to Music while you code?</label>
+                <select name="dropdownList" id="dropdown">
+                    <option value="optionA" selected="selected">Always</option>
+                    <option value="optionB">Often</option>
+                    <option value="optionC">Sometimes</option>
+                    <option value="optionC" >Never</option>
+                </select>
+            </div>
+
+            <div class="survey-question">
+                <p>Do you have a favorite music streaming service?<br>If so, please select it:</p>
+                <div>
+                    <div class="radio-buttons"><input type="radio" name="radio" id="radioButton1" value="apple">
+                    <label for="radioButton1">Apple Music</label></div>
+
+                    <div class="radio-buttons"><input type="radio" name="radio" id="radioButton2" value="spotify">
+                    <label for="radioButton2">Spotify</label></div>
+
+                    <div class="radio-buttons"><input type="radio" name="radio" id="radioButton3" value="amazon">
+                    <label for="radioButton3">Amazon Music</label></div>
+
+                    <div class="radio-buttons"><input type="radio" name="radio" id="radioButton3" value="google">
+                    <label for="radioButton3">Google Play</label></div>
                     
-        </div>
+                    <div class="radio-buttons"><input type="radio" name="radio" id="radioButton3" value="napster">
+                    <label for="radioButton3">Napster</label></div>
 
-        <div>
-            <label for="textarea">Additional notes?</label>
-            <textarea name="textarea" id="textareabox" rows="10" cols="50">Enter your comments here</textarea>
+                    <div class="radio-buttons"><input type="radio" name="radio" id="radioButton3" value="vinyl">
+                    <label for="radioButton3">I listen only to vinyl</label></div>
+                </div>
+            </div>
+
+            <div class="survey-question">
+                <p>Which of the following genres of music do you listen to? (select all that apply)</p>
+                <div>
                     
-        </div>
+                    <div class="checkboxes">
+                        <label for="checkbox1">Classical</label>
+                        <input type="checkbox" name="checkbox" id="checkbox1" value="checkbox1">
+                    </div>
 
-        <input type="submit" id="submit" value="Submit">
+                    <div class="checkboxes">
+                        <label for="checkbox2">Jazz</label>
+                        <input type="checkbox" name="checkbox" id="checkbox2" value="checkbox2">
+                    </div>
 
-    </form>
+                    <div class="checkboxes">
+                        <label for="checkbox3">Indie</label>
+                        <input type="checkbox" name="checkbox" id="checkbox3" value="checkbox3">
+                    </div>
+
+                    <div class="checkboxes">
+                        <label for="checkbox4">Rock</label>
+                        <input type="checkbox" name="checkbox" id="checkbox4" value="checkbox4">
+                    </div>
+
+                    <div class="checkboxes">
+                        <label for="checkbox5">Hiphop</label>
+                        <input type="checkbox" name="checkbox" id="checkbox5" value="checkbox5">
+                    </div>
+
+                    <div class="checkboxes">
+                        <label for="checkbox5">Electronic</label>
+                        <input type="checkbox" name="checkbox" id="checkbox5" value="checkbox5">
+                    </div>
+                    
+                    <div class="checkboxes">
+                        <label for="checkbox5">Country</label>
+                        <input type="checkbox" name="checkbox" id="checkbox5" value="checkbox5">
+                    </div>
+
+                    <div class="checkboxes">
+                        <label for="checkbox5">Pop</label>
+                        <input type="checkbox" name="checkbox" id="checkbox5" value="checkbox5">    
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="survey-question">
+                <label for="textarea">If you listen to Spotify, what is your favourite playlist(s) for when you are coding?</label><br>
+                <textarea name="textarea" id="textareabox">Enter your comments here</textarea>
+                        
+            </div>
+
+            <input type="submit" id="submit" value="Submit">
+
+        </form>
+    
+    </div> <!-- end of form-container -->
     
 </body>
 </html>
