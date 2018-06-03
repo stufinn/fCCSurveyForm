@@ -1,0 +1,128 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* END CSS RESET */
+
+
+/* Global styles */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25vmax;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 255, 0.3),rgba(0, 0, 255, 0.3)), 
+    url('https://raw.githubusercontent.com/stufinn/fCCSurveyForm/master/assets/images/adrian-korte-76051-unsplash-small.jpg');
+    background-size: cover; 
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 3vmax;
+    padding-bottom: 10px;
+}
+
+
+#top-bar {
+    display: flex;
+    flex-direction: column;
+    min-height: 40px;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    /* background-image: ; */
+}
+
+#title,
+#description {
+    display: block;
+}
+
+#description {
+    font-size: 1.5vmax;
+    padding: 0;
+}
+
+#flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#survey-form {
+    width: 50%;
+    background: none;
+    padding: 30px;
+    border: 1px solid white; 
+}
+
+.survey-question {
+    padding-bottom: 20px;
+}
+
+#textareabox {
+    margin-top: 10px;
+    width: 85%;
+}
+
+.small-label {
+    display: inline-block;
+    width: 50%;
+    padding-right: 8px;
+}
+
+.checkboxes,
+.radio-buttons {
+    display: block;
+    padding: 10px 0 0 35%;
+}
